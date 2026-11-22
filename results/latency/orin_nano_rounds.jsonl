@@ -1,0 +1,18 @@
+{"kind": "latency_rounds", "tag": "pub_yolov10n", "gpu": "Orin", "e2e_median_ms": 33.69, "e2e_min_ms": 33.24, "e2e_max_ms": 33.78, "e2e_p90_ms": 37.45, "fwd_median_ms": 27.27, "fwd_min_ms": 27.24, "fwd_max_ms": 27.29}
+{"kind": "latency_rounds", "tag": "access1_s2", "gpu": "Orin", "e2e_median_ms": 40.85, "e2e_min_ms": 40.25, "e2e_max_ms": 40.95, "e2e_p90_ms": 44.61, "fwd_median_ms": 27.13, "fwd_min_ms": 26.71, "fwd_max_ms": 27.23}
+{"kind": "latency_rounds", "tag": "access1_s1", "gpu": "Orin", "e2e_median_ms": 40.91, "e2e_min_ms": 40.67, "e2e_max_ms": 40.98, "e2e_p90_ms": 44.81, "fwd_median_ms": 27.19, "fwd_min_ms": 27.08, "fwd_max_ms": 27.21}
+{"kind": "latency_rounds", "tag": "access1_s0", "gpu": "Orin", "e2e_median_ms": 40.81, "e2e_min_ms": 40.48, "e2e_max_ms": 40.99, "e2e_p90_ms": 44.63, "fwd_median_ms": 26.98, "fwd_min_ms": 26.95, "fwd_max_ms": 27.12}
+{"kind": "latency_rounds", "tag": "ab3_c3k2", "gpu": "Orin", "e2e_median_ms": 36.08, "e2e_min_ms": 35.98, "e2e_max_ms": 36.24, "e2e_p90_ms": 39.94, "fwd_median_ms": 24.82, "fwd_min_ms": 24.79, "fwd_max_ms": 24.84}
+{"kind": "latency_rounds", "tag": "yolo26n_l4_s0", "gpu": "Orin", "e2e_median_ms": 39.38, "e2e_min_ms": 38.98, "e2e_max_ms": 39.45, "e2e_p90_ms": 43.16, "fwd_median_ms": 27.96, "fwd_min_ms": 27.94, "fwd_max_ms": 28.0}
+{"kind": "deploy", "tag": "access1_s0", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 61.6}
+{"kind": "deploy", "tag": "access1_s1", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 61.6}
+{"kind": "deploy", "tag": "access1_s2", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 61.6}
+{"kind": "deploy", "tag": "yolo26n_l4_s0", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 63.7}
+{"kind": "deploy", "tag": "pub_yolov10n", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 59.8}
+{"kind": "deploy", "tag": "ab3_c3k2", "gpu": "Orin", "cpu": "unknown", "peak_mem_mb": 61.7}
+{"kind": "trt_rounds", "tag": "access1_s2", "gpu": "Orin", "trt_median_ms": 23.33, "trt_min_ms": 23.3, "trt_max_ms": 23.38, "trt_p90_ms": 27.06, "trt_fwd_median_ms": 9.8, "trt_fwd_min_ms": 9.8, "trt_fwd_max_ms": 9.81}
+{"kind": "trt_rounds", "tag": "yolo26n_l4_s0", "gpu": "Orin", "trt_median_ms": 25.53, "trt_min_ms": 25.48, "trt_max_ms": 25.55, "trt_p90_ms": 29.27, "trt_fwd_median_ms": 11.96, "trt_fwd_min_ms": 11.95, "trt_fwd_max_ms": 11.98}
+{"kind": "trt_rounds", "tag": "ab3_c3k2", "gpu": "Orin", "trt_median_ms": 22.94, "trt_min_ms": 22.82, "trt_max_ms": 23.0, "trt_p90_ms": 26.87, "trt_fwd_median_ms": 9.47, "trt_fwd_min_ms": 9.46, "trt_fwd_max_ms": 9.47}
+{"kind": "trt_rounds", "tag": "access1_s0", "gpu": "Orin", "trt_median_ms": 23.28, "trt_min_ms": 23.27, "trt_max_ms": 23.45, "trt_p90_ms": 27.04, "trt_fwd_median_ms": 9.8, "trt_fwd_min_ms": 9.78, "trt_fwd_max_ms": 9.81}
+{"kind": "trt_rounds", "tag": "pub_yolov10n", "gpu": "Orin", "trt_median_ms": 25.44, "trt_min_ms": 25.38, "trt_max_ms": 25.63, "trt_p90_ms": 29.19, "trt_fwd_median_ms": 11.96, "trt_fwd_min_ms": 11.96, "trt_fwd_max_ms": 11.97}
+{"kind": "trt_rounds", "tag": "access1_s1", "gpu": "Orin", "trt_median_ms": 23.31, "trt_min_ms": 23.28, "trt_max_ms": 23.35, "trt_p90_ms": 26.95, "trt_fwd_median_ms": 9.8, "trt_fwd_min_ms": 9.78, "trt_fwd_max_ms": 9.81}

@@ -1,0 +1,542 @@
+{
+ "gpu": "Tesla T4",
+ "split": "valid",
+ "limit": null,
+ "models": {
+  "access1_s0": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 18.8,
+   "n_dets": 462791,
+   "multi_md1000": {
+    "mAP50_95": 29.446,
+    "mAP50": 49.312,
+    "mAP75": 29.547,
+    "mAP50_95_md100": 29.304,
+    "mAP50_md100": 48.956,
+    "AR500": 50.115,
+    "AP_tiny": 12.266,
+    "AP50_tiny": 29.326,
+    "AP_small": 20.912,
+    "AP50_small": 40.871,
+    "AP_medium": 40.354,
+    "AP50_medium": 61.558,
+    "AP_large": 47.053,
+    "AP50_large": 61.452,
+    "per_class": {
+     "pedestrian": {
+      "AP": 29.332,
+      "AP50": 60.311
+     },
+     "people": {
+      "AP": 19.071,
+      "AP50": 46.801
+     },
+     "bicycle": {
+      "AP": 12.202,
+      "AP50": 25.448
+     },
+     "car": {
+      "AP": 60.732,
+      "AP50": 85.816
+     },
+     "van": {
+      "AP": 36.738,
+      "AP50": 51.994
+     },
+     "truck": {
+      "AP": 28.418,
+      "AP50": 42.558
+     },
+     "tricycle": {
+      "AP": 21.543,
+      "AP50": 37.029
+     },
+     "awning-tricycle": {
+      "AP": 11.137,
+      "AP50": 18.428
+     },
+     "bus": {
+      "AP": 46.911,
+      "AP50": 64.496
+     },
+     "motor": {
+      "AP": 28.38,
+      "AP50": 60.243
+     }
+    },
+    "n_dets": 415315
+   },
+   "multi_md500": {
+    "mAP50_95": 29.184,
+    "mAP50": 48.666,
+    "mAP75": 29.392,
+    "mAP50_95_md100": 29.092,
+    "mAP50_md100": 48.462,
+    "AR500": 46.805,
+    "AP_tiny": 12.12,
+    "AP50_tiny": 28.863,
+    "AP_small": 20.67,
+    "AP50_small": 40.193,
+    "AP_medium": 40.055,
+    "AP50_medium": 61.012,
+    "AP_large": 46.945,
+    "AP50_large": 61.297,
+    "n_dets": 230111
+   },
+   "latency_pass_median_ms": [
+    19.41,
+    19.55
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 19.48,
+   "latency_p90_ms": 23.98
+  },
+  "access1_s1": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 14.4,
+   "n_dets": 465871,
+   "multi_md1000": {
+    "mAP50_95": 29.786,
+    "mAP50": 49.745,
+    "mAP75": 30.141,
+    "mAP50_95_md100": 29.648,
+    "mAP50_md100": 49.389,
+    "AR500": 50.2,
+    "AP_tiny": 12.809,
+    "AP50_tiny": 29.849,
+    "AP_small": 21.258,
+    "AP50_small": 41.544,
+    "AP_medium": 40.783,
+    "AP50_medium": 61.899,
+    "AP_large": 50.077,
+    "AP50_large": 66.058,
+    "per_class": {
+     "pedestrian": {
+      "AP": 29.057,
+      "AP50": 60.221
+     },
+     "people": {
+      "AP": 18.44,
+      "AP50": 46.48
+     },
+     "bicycle": {
+      "AP": 12.502,
+      "AP50": 25.421
+     },
+     "car": {
+      "AP": 60.55,
+      "AP50": 85.778
+     },
+     "van": {
+      "AP": 36.213,
+      "AP50": 50.962
+     },
+     "truck": {
+      "AP": 29.219,
+      "AP50": 43.024
+     },
+     "tricycle": {
+      "AP": 22.708,
+      "AP50": 39.18
+     },
+     "awning-tricycle": {
+      "AP": 13.623,
+      "AP50": 21.597
+     },
+     "bus": {
+      "AP": 47.437,
+      "AP50": 65.283
+     },
+     "motor": {
+      "AP": 28.109,
+      "AP50": 59.502
+     }
+    },
+    "n_dets": 419502
+   },
+   "multi_md500": {
+    "mAP50_95": 29.52,
+    "mAP50": 49.129,
+    "mAP75": 29.944,
+    "mAP50_95_md100": 29.439,
+    "mAP50_md100": 48.917,
+    "AR500": 47.078,
+    "AP_tiny": 12.657,
+    "AP50_tiny": 29.359,
+    "AP_small": 21.012,
+    "AP50_small": 40.861,
+    "AP_medium": 40.472,
+    "AP50_medium": 61.367,
+    "AP_large": 49.988,
+    "AP50_large": 65.887,
+    "n_dets": 231309
+   },
+   "latency_pass_median_ms": [
+    19.3,
+    19.61
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 19.49,
+   "latency_p90_ms": 24.94
+  },
+  "access1_s2": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 14.4,
+   "n_dets": 468841,
+   "multi_md1000": {
+    "mAP50_95": 29.616,
+    "mAP50": 49.603,
+    "mAP75": 29.794,
+    "mAP50_95_md100": 29.479,
+    "mAP50_md100": 49.264,
+    "AR500": 50.021,
+    "AP_tiny": 12.099,
+    "AP50_tiny": 29.145,
+    "AP_small": 20.993,
+    "AP50_small": 41.029,
+    "AP_medium": 41.033,
+    "AP50_medium": 62.441,
+    "AP_large": 52.65,
+    "AP50_large": 69.08,
+    "per_class": {
+     "pedestrian": {
+      "AP": 28.586,
+      "AP50": 59.538
+     },
+     "people": {
+      "AP": 18.758,
+      "AP50": 46.619
+     },
+     "bicycle": {
+      "AP": 12.805,
+      "AP50": 26.586
+     },
+     "car": {
+      "AP": 60.475,
+      "AP50": 85.609
+     },
+     "van": {
+      "AP": 36.554,
+      "AP50": 51.557
+     },
+     "truck": {
+      "AP": 29.113,
+      "AP50": 43.236
+     },
+     "tricycle": {
+      "AP": 21.9,
+      "AP50": 37.823
+     },
+     "awning-tricycle": {
+      "AP": 12.995,
+      "AP50": 20.632
+     },
+     "bus": {
+      "AP": 46.413,
+      "AP50": 63.939
+     },
+     "motor": {
+      "AP": 28.555,
+      "AP50": 60.491
+     }
+    },
+    "n_dets": 421161
+   },
+   "multi_md500": {
+    "mAP50_95": 29.363,
+    "mAP50": 48.976,
+    "mAP75": 29.638,
+    "mAP50_95_md100": 29.275,
+    "mAP50_md100": 48.766,
+    "AR500": 46.669,
+    "AP_tiny": 11.934,
+    "AP50_tiny": 28.652,
+    "AP_small": 20.771,
+    "AP50_small": 40.43,
+    "AP_medium": 40.7,
+    "AP50_medium": 61.779,
+    "AP_large": 52.462,
+    "AP50_large": 68.766,
+    "n_dets": 231358
+   },
+   "latency_pass_median_ms": [
+    20.78,
+    19.74
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 20.39,
+   "latency_p90_ms": 25.43
+  },
+  "yolo26n_1280_s0": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 15.5,
+   "n_dets": 460764,
+   "multi_md1000": {
+    "mAP50_95": 30.581,
+    "mAP50": 51.108,
+    "mAP75": 30.551,
+    "mAP50_95_md100": 30.436,
+    "mAP50_md100": 50.706,
+    "AR500": 50.819,
+    "AP_tiny": 13.287,
+    "AP50_tiny": 31.248,
+    "AP_small": 21.763,
+    "AP50_small": 42.385,
+    "AP_medium": 41.949,
+    "AP50_medium": 63.777,
+    "AP_large": 56.584,
+    "AP50_large": 71.532,
+    "per_class": {
+     "pedestrian": {
+      "AP": 29.619,
+      "AP50": 61.178
+     },
+     "people": {
+      "AP": 19.687,
+      "AP50": 48.997
+     },
+     "bicycle": {
+      "AP": 14.372,
+      "AP50": 29.452
+     },
+     "car": {
+      "AP": 61.448,
+      "AP50": 86.528
+     },
+     "van": {
+      "AP": 37.486,
+      "AP50": 52.517
+     },
+     "truck": {
+      "AP": 29.566,
+      "AP50": 44.091
+     },
+     "tricycle": {
+      "AP": 23.033,
+      "AP50": 39.869
+     },
+     "awning-tricycle": {
+      "AP": 12.843,
+      "AP50": 21.063
+     },
+     "bus": {
+      "AP": 48.04,
+      "AP50": 65.449
+     },
+     "motor": {
+      "AP": 29.715,
+      "AP50": 61.938
+     }
+    },
+    "n_dets": 410797
+   },
+   "multi_md500": {
+    "mAP50_95": 30.34,
+    "mAP50": 50.521,
+    "mAP75": 30.395,
+    "mAP50_95_md100": 30.242,
+    "mAP50_md100": 50.28,
+    "AR500": 47.687,
+    "AP_tiny": 13.144,
+    "AP50_tiny": 30.806,
+    "AP_small": 21.582,
+    "AP50_small": 41.886,
+    "AP_medium": 41.59,
+    "AP50_medium": 63.138,
+    "AP_large": 56.338,
+    "AP50_large": 71.113,
+    "n_dets": 227902
+   },
+   "latency_pass_median_ms": [
+    18.88,
+    19.31
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 19.03,
+   "latency_p90_ms": 24.07
+  },
+  "ab6_plainconv": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 14.7,
+   "n_dets": 462868,
+   "multi_md1000": {
+    "mAP50_95": 29.836,
+    "mAP50": 49.754,
+    "mAP75": 30.136,
+    "mAP50_95_md100": 29.695,
+    "mAP50_md100": 49.4,
+    "AR500": 50.085,
+    "AP_tiny": 12.495,
+    "AP50_tiny": 29.597,
+    "AP_small": 20.958,
+    "AP50_small": 40.728,
+    "AP_medium": 41.272,
+    "AP50_medium": 62.579,
+    "AP_large": 47.557,
+    "AP50_large": 59.188,
+    "per_class": {
+     "pedestrian": {
+      "AP": 29.534,
+      "AP50": 61.122
+     },
+     "people": {
+      "AP": 19.042,
+      "AP50": 47.474
+     },
+     "bicycle": {
+      "AP": 12.905,
+      "AP50": 26.752
+     },
+     "car": {
+      "AP": 60.96,
+      "AP50": 86.001
+     },
+     "van": {
+      "AP": 36.256,
+      "AP50": 51.196
+     },
+     "truck": {
+      "AP": 29.614,
+      "AP50": 43.827
+     },
+     "tricycle": {
+      "AP": 22.784,
+      "AP50": 38.767
+     },
+     "awning-tricycle": {
+      "AP": 12.455,
+      "AP50": 19.789
+     },
+     "bus": {
+      "AP": 46.454,
+      "AP50": 62.913
+     },
+     "motor": {
+      "AP": 28.352,
+      "AP50": 59.703
+     }
+    },
+    "n_dets": 416992
+   },
+   "multi_md500": {
+    "mAP50_95": 29.605,
+    "mAP50": 49.182,
+    "mAP75": 29.994,
+    "mAP50_95_md100": 29.521,
+    "mAP50_md100": 48.966,
+    "AR500": 46.908,
+    "AP_tiny": 12.314,
+    "AP50_tiny": 29.011,
+    "AP_small": 20.75,
+    "AP50_small": 40.106,
+    "AP_medium": 40.986,
+    "AP50_medium": 62.073,
+    "AP_large": 47.355,
+    "AP50_large": 58.858,
+    "n_dets": 231228
+   },
+   "latency_pass_median_ms": [
+    19.39,
+    20.61
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 19.86,
+   "latency_p90_ms": 25.7
+  },
+  "ab7_p5": {
+   "imgsz": 1280,
+   "family": "ultralytics",
+   "infer_sec": 15.1,
+   "n_dets": 466617,
+   "multi_md1000": {
+    "mAP50_95": 29.648,
+    "mAP50": 49.348,
+    "mAP75": 29.957,
+    "mAP50_95_md100": 29.509,
+    "mAP50_md100": 48.997,
+    "AR500": 50.389,
+    "AP_tiny": 12.467,
+    "AP50_tiny": 29.535,
+    "AP_small": 20.822,
+    "AP50_small": 40.566,
+    "AP_medium": 40.813,
+    "AP50_medium": 62.213,
+    "AP_large": 52.749,
+    "AP50_large": 66.635,
+    "per_class": {
+     "pedestrian": {
+      "AP": 29.174,
+      "AP50": 60.52
+     },
+     "people": {
+      "AP": 18.81,
+      "AP50": 46.447
+     },
+     "bicycle": {
+      "AP": 12.361,
+      "AP50": 26.102
+     },
+     "car": {
+      "AP": 60.841,
+      "AP50": 85.821
+     },
+     "van": {
+      "AP": 36.296,
+      "AP50": 51.316
+     },
+     "truck": {
+      "AP": 30.468,
+      "AP50": 43.784
+     },
+     "tricycle": {
+      "AP": 21.823,
+      "AP50": 37.393
+     },
+     "awning-tricycle": {
+      "AP": 12.113,
+      "AP50": 19.624
+     },
+     "bus": {
+      "AP": 46.29,
+      "AP50": 63.026
+     },
+     "motor": {
+      "AP": 28.307,
+      "AP50": 59.449
+     }
+    },
+    "n_dets": 420808
+   },
+   "multi_md500": {
+    "mAP50_95": 29.366,
+    "mAP50": 48.699,
+    "mAP75": 29.756,
+    "mAP50_95_md100": 29.278,
+    "mAP50_md100": 48.488,
+    "AR500": 46.992,
+    "AP_tiny": 12.28,
+    "AP50_tiny": 28.947,
+    "AP_small": 20.572,
+    "AP50_small": 39.907,
+    "AP_medium": 40.434,
+    "AP50_medium": 61.556,
+    "AP_large": 52.669,
+    "AP50_large": 66.551,
+    "n_dets": 232123
+   },
+   "latency_pass_median_ms": [
+    21.31,
+    22.54
+   ],
+   "latency_precision": "fp16",
+   "latency_median_ms": 22.35,
+   "latency_p90_ms": 27.42
+  }
+ },
+ "latency_input": "rectangular letterbox"
+}

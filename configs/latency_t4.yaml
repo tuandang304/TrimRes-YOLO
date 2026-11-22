@@ -1,0 +1,29 @@
+# Latency on an NVIDIA T4 (eager PyTorch FP16): five interleaved rounds, end to end and forward only, batch 1, 1280.
+#   python -m bench.main --config configs/latency_t4.yaml   (checkpoints in weights/<tag>.pt)
+data_root: /tmp/visdrone/data
+tasks: [data, measure]
+measure:
+  split: valid
+  ap: false
+  rounds: 5
+  order_seed: 0
+  latency_images: 200
+  n_warm: 30
+  n_iter: 200
+  models:
+  - {tag: trimres_s0, family: ultralytics, ckpt: weights/trimres_s0.pt, imgsz: 1280, latency: true}
+  - {tag: trimres_s1, family: ultralytics, ckpt: weights/trimres_s1.pt, imgsz: 1280, latency: true}
+  - {tag: trimres_s2, family: ultralytics, ckpt: weights/trimres_s2.pt, imgsz: 1280, latency: true}
+  - {tag: yolo26n_s0, family: ultralytics, ckpt: weights/yolo26n_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab1_s1, family: ultralytics, ckpt: weights/ab1_s1.pt, imgsz: 1280, latency: true}
+  - {tag: ab2_s0, family: ultralytics, ckpt: weights/ab2_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab3_s0, family: ultralytics, ckpt: weights/ab3_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab4_s0, family: ultralytics, ckpt: weights/ab4_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab5_s0, family: ultralytics, ckpt: weights/ab5_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab6_s0, family: ultralytics, ckpt: weights/ab6_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab7_s0, family: ultralytics, ckpt: weights/ab7_s0.pt, imgsz: 1280, latency: true}
+  - {tag: ab8_s2, family: ultralytics, ckpt: weights/ab8_s2.pt, imgsz: 1280, latency: true}
+  - {tag: public_yolo26n, family: ultralytics, ckpt: weights/public_yolo26n.pt, imgsz: 1280, latency: true}
+  - {tag: public_yolo11n, family: ultralytics, ckpt: weights/public_yolo11n.pt, imgsz: 1280, latency: true}
+  - {tag: public_yolov10n, family: ultralytics, ckpt: weights/public_yolov10n.pt, imgsz: 1280, latency: true}
+  - {tag: rfdetr_nano, family: rfdetr, imgsz: 640, pos_enc: 40, latency: true}

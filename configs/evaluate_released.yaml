@@ -1,0 +1,16 @@
+# Re-score the released TrimRes-YOLO checkpoints with the paper's evaluator (no training, no latency):
+# multi-label NMS (IoU 0.7, conf 0.001), up to 1000 detections per image, VisDrone ignore regions filtered
+# (IoA > 0.5), COCOeval with maxDets 500. Download trimres_s{0,1,2}.pt from the GitHub release into weights/.
+#   python -m bench.main --config configs/evaluate_released.yaml
+data_root: /tmp/visdrone/data
+tasks:
+- data
+- measure
+measure:
+  split: valid
+  ap: true
+  latency: false
+  models:
+  - {tag: trimres_s0, family: ultralytics, ckpt: weights/trimres_s0.pt, imgsz: 1280}
+  - {tag: trimres_s1, family: ultralytics, ckpt: weights/trimres_s1.pt, imgsz: 1280}
+  - {tag: trimres_s2, family: ultralytics, ckpt: weights/trimres_s2.pt, imgsz: 1280}

@@ -1,0 +1,73 @@
+# AB4: softmax attention in the L10 C2PSA (no linear attention)
+# Shared recipe: 100 epochs at 1280x1280, batch 16, MuSGD lr0 0.01, momentum 0.9, warmup bias LR 0,
+# COCO-pretrained YOLO26n initialization, one NVIDIA L4 per seed. Run one seed per process:
+#   python -m bench.main --config configs/ablations/ab4.yaml --seed 0
+data_root: /tmp/visdrone/data
+tasks:
+- data
+- train
+train:
+  model: ab4
+  epochs: 100
+  imgsz: 1280
+  seeds:
+  - 0
+  - 1
+  - 2
+  arch:
+    yaml: models/trimres.yaml
+    head_c3: 64
+    stride_mult: 32
+    lowrank:
+      layers:
+      - 3
+      - 5
+      ratio: 0.5
+    inherit:
+      ranges:
+      - - 0
+        - 19
+        - 0
+      detect_levels:
+      - 0
+      - 1
+    access:
+    - op: lowrank_conv
+      layers:
+      - 7
+      rank: 64
+    - op: lowrank_pw
+      layers:
+      - 9
+      attr: cv2
+      rank: 128
+    - op: hybrid_c3k
+      layers:
+      - 8
+      idx: 0
+      replace: true
+      ratio: 2
+      d: 32
+    - op: hybrid_c3k
+      layers:
+      - 8
+      idx: 1
+      replace: true
+      ratio: 2
+      d: 32
+    - op: repconv
+      layers:
+      - 13
+  extra:
+    workers: 8
+    cache: false
+    optimizer: MuSGD
+    lr0: 0.01
+    momentum: 0.9
+    warmup_bias_lr: 0.0
+eval:
+  imgsz:
+  - 1280
+  splits:
+  - valid
+  - test

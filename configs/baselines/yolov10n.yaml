@@ -1,0 +1,30 @@
+# yolov10n same-recipe baseline
+# Shared recipe: 100 epochs at 1280x1280, batch 16, MuSGD lr0 0.01, momentum 0.9, warmup bias LR 0,
+# COCO-pretrained YOLO26n initialization, one NVIDIA L4 per seed. Run one seed per process:
+#   python -m bench.main --config configs/baselines/yolov10n.yaml --seed 0
+data_root: /tmp/visdrone/data
+tasks:
+- data
+- train
+train:
+  model: yolov10n
+  epochs: 100
+  imgsz: 1280
+  seeds:
+  - 0
+  - 1
+  - 2
+  extra:
+    workers: 8
+    cache: false
+    batch: 16
+    optimizer: MuSGD
+    lr0: 0.01
+    momentum: 0.9
+    warmup_bias_lr: 0.0
+eval:
+  imgsz:
+  - 1280
+  splits:
+  - valid
+  - test

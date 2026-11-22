@@ -1,0 +1,119 @@
+{
+  "tag": "access1_100_s1_s1",
+  "family": "ultralytics",
+  "ckpt": "access1_100_s1_s1/train/weights/best.pt",
+  "metrics": {
+    "valid@1280": {
+      "std": {
+        "mAP50_95": 29.108,
+        "mAP50": 48.447,
+        "mAP75": 29.549,
+        "mAP50_95_md100": 28.962,
+        "mAP50_md100": 48.077,
+        "AR500": 50.047,
+        "AP_tiny": 11.854,
+        "AP50_tiny": 27.585,
+        "AP_small": 20.313,
+        "AP50_small": 39.589,
+        "AP_medium": 40.358,
+        "AP50_medium": 61.163,
+        "AP_large": 49.876,
+        "AP50_large": 65.648,
+        "per_class": {
+          "pedestrian": {
+            "AP": 28.334,
+            "AP50": 58.437
+          },
+          "people": {
+            "AP": 18.061,
+            "AP50": 45.445
+          },
+          "bicycle": {
+            "AP": 12.0,
+            "AP50": 24.349
+          },
+          "car": {
+            "AP": 59.986,
+            "AP50": 84.882
+          },
+          "van": {
+            "AP": 35.868,
+            "AP50": 50.388
+          },
+          "truck": {
+            "AP": 28.557,
+            "AP50": 41.765
+          },
+          "tricycle": {
+            "AP": 22.094,
+            "AP50": 37.967
+          },
+          "awning-tricycle": {
+            "AP": 12.89,
+            "AP50": 20.319
+          },
+          "bus": {
+            "AP": 45.898,
+            "AP50": 63.178
+          },
+          "motor": {
+            "AP": 27.388,
+            "AP50": 57.74
+          }
+        },
+        "n_dets": 465935
+      },
+      "ignore_aware": {
+        "mAP50_95": 29.78,
+        "mAP50": 49.738,
+        "mAP75": 30.136,
+        "mAP50_95_md100": 29.642,
+        "mAP50_md100": 49.392,
+        "AR500": 50.204,
+        "AP_tiny": 12.801,
+        "AP50_tiny": 29.815,
+        "AP_small": 21.249,
+        "AP50_small": 41.526,
+        "AP_medium": 40.775,
+        "AP50_medium": 61.898,
+        "AP_large": 50.121,
+        "AP50_large": 65.979,
+        "n_dets": 419572
+      },
+      "infer_sec": 279.3
+    }
+  },
+  "efficiency": {
+    "params_M": 1.302,
+    "GFLOPs@1280": 15.99,
+    "e2e_ms@1280_median": 26.05,
+    "e2e_ms@1280_p90": 26.6,
+    "gpu": "NVIDIA L4",
+    "precision": "fp16",
+    "batch": 1
+  },
+  "train": {
+    "train_hours": 3.926,
+    "train_kwargs": {
+      "data": "data.yaml",
+      "epochs": "100",
+      "imgsz": "1280",
+      "batch": "16",
+      "seed": "1",
+      "deterministic": "True",
+      "device": "0",
+      "project": "access1_100_s1_s1",
+      "name": "train",
+      "exist_ok": "True",
+      "plots": "True",
+      "workers": "8",
+      "cache": "False",
+      "val": "True",
+      "trainer": "<class 'bench.pra.make_trainer.<locals>.PRATrainer'>",
+      "optimizer": "MuSGD",
+      "lr0": "0.01",
+      "momentum": "0.9",
+      "warmup_bias_lr": "0.0"
+    }
+  }
+}
