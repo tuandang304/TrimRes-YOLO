@@ -3,7 +3,11 @@
 Code, configurations, trained weights and raw results for
 
 > **TrimRes-YOLO: A two-scale, low-rank nano detector for tiny objects in high-resolution UAV imagery**
-> Dang Thanh Tuan, Nguyen Thien Thanh, Phan Anh Minh, Pham Thanh Tri, Le Phu-Nguyen. Manuscript submitted to *PLOS ONE*.
+> Dang Thanh Tuan¹, Nguyen Thien Thanh¹, Phan Anh Minh¹, Pham Thanh Tri¹, Le Phu-Nguyen²\*<br>
+> ¹ Department of Information Technology, FPT University, Ho Chi Minh City, Vietnam<br>
+> ² Faculty of Electrical and Electronics Engineering, Vietnam Aerospace University, Ho Chi Minh City, Vietnam<br>
+> \* Corresponding author: nguyenlp@vaa.edu.vn<br>
+> Manuscript submitted to *PLOS ONE*.
 
 TrimRes-YOLO starts from COCO-pretrained YOLO26n and asks how much of a nano detector can be pruned or factorized at a
 fixed 1280×1280 input. It detects at strides 8 and 16 only, downsamples through low-rank convolutions initialized by
