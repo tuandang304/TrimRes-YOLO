@@ -3,9 +3,10 @@
 Code, configurations, trained weights and raw results for
 
 > **TrimRes-YOLO: A two-scale, low-rank nano detector for tiny objects in high-resolution UAV imagery**
-> Dang Thanh Tuan¹, Nguyen Thien Thanh¹, Phan Anh Minh¹, Pham Thanh Tri¹, Le Phu-Nguyen²\*<br>
+> Dang Thanh Tuan¹☯, Pham Thanh Tri¹☯, Nguyen Thien Thanh¹, Phan Anh Minh¹, Le Phu-Nguyen²\*<br>
 > ¹ Department of Information Technology, FPT University, Ho Chi Minh City, Vietnam<br>
 > ² Faculty of Electrical and Electronics Engineering, Vietnam Aerospace University, Ho Chi Minh City, Vietnam<br>
+> ☯ These authors contributed equally to this work.<br>
 > \* Corresponding author: nguyenlp@vaa.edu.vn<br>
 > Manuscript submitted to *PLOS ONE*.
 
@@ -123,7 +124,7 @@ If you use this code, please cite the paper (citation details will be added on p
 ```bibtex
 @article{trimresyolo,
   title  = {TrimRes-YOLO: A two-scale, low-rank nano detector for tiny objects in high-resolution UAV imagery},
-  author = {Dang, Thanh Tuan and Nguyen, Thien Thanh and Phan, Anh Minh and Pham, Thanh Tri and Le, Phu-Nguyen},
+  author = {Dang, Thanh Tuan and Pham, Thanh Tri and Nguyen, Thien Thanh and Phan, Anh Minh and Le, Phu-Nguyen},
   note   = {Manuscript submitted to PLOS ONE},
   year   = {2026}
 }
